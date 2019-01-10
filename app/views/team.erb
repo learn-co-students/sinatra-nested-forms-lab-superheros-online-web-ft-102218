@@ -1,3 +1,10 @@
-
+<h1><%= @team.name %></h1>
+<h2>Team Motto: <%= @team.motto %>
+<% SuperHero.all.each.with_index(1) { |hero, i| %>
+<h3>Hero <%= i %></h3>
+<p>Hero Name: <%= hero.name %><br>
+Hero Power: <%= hero.power %><br>
+Hero Biography: <%= hero.bio %></p>
+<% } %>
 
 
